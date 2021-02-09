@@ -1,0 +1,31 @@
+Package: tFTAnalyzer
+Type: Package
+Title: Analysis of tandem fluorescent timertags
+Version: 0.1.0
+Authors@R: as.person(c(
+    "Chang Jia Geng <jgc47@cam.ac.uk> [aut, cre]"
+  ))
+Maintainer: Chang Jia Geng <jgc47@cam.ac.uk>
+Description: Process, visualize, model parameters to raw intensities from 
+    single cell timelapse fluorescence microscopy recordings captured by ImageJ.
+    It is meant to automate downstream analysis of tandem fluorescent tags to 
+    determine protein stability. 
+    This package is borne out of my NST part II pharmacology research project,
+    under Lindon laboratory, Department of Pharmacology, Cambridge.
+    Mathematical modelling is obtained from Khmelinskii A, Keller PJ, 
+    Bartosik A, Meurer M, Barry JD, Mardin BR, Kaufmann A, Trautmann S, 
+    Wachsmuth M, Pereira G, Huber W, Schiebel E, Knop M. Tandem fluorescent 
+    protein timers for in vivo analysis of protein dynamics. Nat Biotechnol. 
+    2012 Jun 24;30(7):708-14. doi: 10.1038/nbt.2281. PMID: 22729030.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports:
+    data.table,
+    deSolve,
+    xlsx
+Depends: R (>= 3.1.0)
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 6.1.0
+Suggests:
+    testthat
